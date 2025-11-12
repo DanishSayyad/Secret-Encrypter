@@ -22,18 +22,38 @@
             <form id="loginForm">
                 <div class="input-group">
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Enter your password" required autocomplete="off">
+                    <div class="input-with-icon">
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required autocomplete="off">
+                        <button type="button" class="toggle-password" id="togglePassword">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
                 
                 <div class="input-group" id="confirmPasswordGroup" style="display: none;">
                     <label for="confirmPassword">Confirm Password</label>
-                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" autocomplete="off">
+                    <div class="input-with-icon">
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" autocomplete="off">
+                        <button type="button" class="toggle-password" id="toggleConfirmPassword">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
                 
                 <button type="submit" class="btn-primary" id="submitBtn">Set Password</button>
             </form>
             
             <div class="error-message" id="errorMessage"></div>
+            
+            <div class="reset-section" id="resetSection" style="display: none;">
+                <button type="button" class="btn-reset" id="resetBtn">Forgot Password? Reset</button>
+            </div>
         </div>
     </div>
     
